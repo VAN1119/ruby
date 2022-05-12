@@ -11,5 +11,16 @@ puts "Heloo, ", "Ruby!"
 
 #pメソッド…文字列の場合""で囲んで表示される(特殊文字もそのまま表示される)
 
+#メソッドの定義
+
+def greeting
+    puts "hello"
+    puts "I'm ban"
+end
+
+puts "メソッドの呼び出し"
+greeting
+
+
 
 
