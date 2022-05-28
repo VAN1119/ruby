@@ -1,3 +1,4 @@
+=begin
 # rubyコマンド
 
 print("Hello, Ruby.\n")
@@ -20,7 +21,19 @@ end
 
 puts "メソッドの呼び出し"
 greeting
+=end
 
+def hello(name)
+    puts "Hello, #{name}."
+end
 
+hello("el amor es basado en el respeto es lo mas poderoso")
+
+def hello1(name="Ruby")
+    puts "Hello, #{name}"
+end
+
+hello1()
+hello1("Java")
 
 
