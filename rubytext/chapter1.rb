@@ -21,8 +21,8 @@ end
 
 puts "メソッドの呼び出し"
 greeting
-=end
 
+# メソッドの定義
 def hello(name)
     puts "Hello, #{name}."
 end
@@ -36,4 +36,33 @@ end
 hello1()
 hello1("Java")
 
+=end
+
+# メソッドの戻り値(returnは省略可能、省略した場合は最後に得られる値が戻り値になる)
+def volume(x, y, z)
+    return x * y * z
+end
+
+p volume(2,3,4)
+p volume(10,20,30)
+
+def area(x, y, z)
+    xy = x * y
+    yz = y * z
+    zx = z * x
+    (xy + yz + zx) * 2
+end
+
+p area(2, 3, 4)
+p area(10, 20, 30)
+
+def max(a, b)
+    if a > b
+        a
+    else
+        b
+    end
+end
+
+p max(10, 5)
 
